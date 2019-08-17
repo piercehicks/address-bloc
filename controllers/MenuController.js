@@ -9,6 +9,7 @@ const inquirer = require('inquirer');
         message: "Please choose from an option below: ",
         choices: [
           "Add new contact",
+           "Get current date and time",
           "Exit"
         ]
       }
@@ -23,6 +24,9 @@ const inquirer = require('inquirer');
           case "Add new contact":
             this.addContact();
             break;
+            case "Get current date and time":
+             this.getDate();
+             break;
           case "Exit":
             this.exit();
           default:
@@ -33,8 +37,12 @@ const inquirer = require('inquirer');
       .catch((err) => {
         console.log(err);
       });
-
   }
+
+  getDate(){
+  console.log(new Date())
+  this.main();
+}
 
   clear(){
     console.log("\x1Bc");
