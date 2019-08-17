@@ -1,0 +1,19 @@
+{
+  "development": {
+    "username": "piercehicks",
+    "password": null,
+    "database": "adrs-bloc-dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false,
+    "port": "5432"
+  },
+  "test": {
+    "username": "piercehicks",
+    "password": null,
+    "database": "adrs-bloc-test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  }
+}

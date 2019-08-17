@@ -4,12 +4,15 @@
   "description": "An application to model an address book in Node",
   "main": "app.js",
   "scripts": {
-   "test": "export NODE_ENV=test&& jasmine"
- },
+    "test": "export NODE_ENV=test&& jasmine"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.3.1",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.15.0"
   },
   "devDependencies": {
     "jasmine": "^3.4.0"
