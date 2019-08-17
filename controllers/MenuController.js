@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const ContactController = require("./ContactController");
+const ContactController = require("./ContactController.js");
 
 module.exports = class MenuController {
   constructor() {
@@ -53,7 +53,7 @@ module.exports = class MenuController {
     this.clear();
     inquirer.prompt(this.book.addContactQuestions).then(answers => {
       this.book
-        .addContact(answers.name, answers.phone)
+        .addContact(answers.name, answers.phone, answer.email)
         .then(contact => {
           console.log("Contact added successfully!");
           this.main();
